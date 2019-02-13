@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-About content goes here.
+This static site was built with **Ruby**, **Jekyll** and **Github Pages**.
 
-* A list item
-* Another list item
+```
+"Simplicity is the key to brilliance" - Bruce Lee
+```
