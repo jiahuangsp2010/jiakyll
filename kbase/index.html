@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h4>KBase</h4><hr>
+{% for kbase in site.kbases %}
+<table><tr><td>
+		<a href="{{ kbase.url | prepend: site.baseurl }}">{{ kbase.title }} ({{kbase.kbid}})</a>
+</td></tr></table>
+{% endfor %}
+<hr>
+<p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

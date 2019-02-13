@@ -7,5 +7,7 @@ categories: jekyll
 
 Check out this [Jekyll Tutorial][jekyll-tutorial].
 
+    https://www.taniarascia.com/make-a-static-website-with-jekyll/
+
 
 [jekyll-tutorial]: https://www.taniarascia.com/make-a-static-website-with-jekyll/

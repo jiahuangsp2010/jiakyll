@@ -22,12 +22,12 @@ h3 {
   line-height: 1.5; }
 
 h1 {
-  color: #ffffff;
+  color: #c1c1c1;
   font-size: 2.5em; }
   h1 a,
   h1 a:visited {
     text-decoration: none;
-    color: #ffffff; }
+    color: #c1c1c1; }
 
 h2 {
   font-size: 2em; }
@@ -39,7 +39,7 @@ a:visited {
   font-weight: bold; }
 
 a:hover {
-  color: #ffffff;
+  color: #c1c1c1;
   text-decoration: underline; }
 
 header {
@@ -96,7 +96,7 @@ aside {
           aside nav ul li a:hover, aside nav ul li a:active {
             background: #000000;
             text-decoration: none;
-            color: #ffffff; }
+            color: #c1c1c1; }
     aside nav:after {
       content: '';
       display: table;
@@ -110,7 +110,8 @@ pre {
   display: block;
   font-family: monospace;
   background-color: black;
-  padding: 18px;
+  padding: 1em;
+  line-height: 1.1em;
   color: white;
   white-space: pre;
   margin: 1em 0; }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Printer - Lexmark - IP Configuration</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://0.0.0.0:8080/kbases/printer-lexmark-ip.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/links/">Links</a></li>
+				                 
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/kbase">KBase</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<h1><a href="">Jia Huang</a></h1>
+</header>
+	<main>
+		<article>
+			<h2>Printer - Lexmark - IP Configuration (10380)</h2>
+
+<h3 id="configure-the-ip-on-a-lexmark-printer">Configure the IP on a Lexmark Printer</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>01. Obtain the current IP address of the printer from the configuration page
+    a. Lexmark e250dn - Hold down the green button until paper prints.
+    b. Lexmark T630 series – MENU &gt; UTILITIES &gt; PRINT SETUP
+    c. Lexmark T644 X644 X654 – MENU &gt; REPORTS &gt; NETWORK SETUP
+    
+02. Open Internet Explorer and go to http://X.X.X.X (X = IP Address from config page) 
+
+03. Click on "Settings"
+
+04. Under Other Settings click on "Network/Ports"
+
+05. Click on TCP/IP
+
+06. Click "Set static IP address" next to the current IP address.
+
+07. Set the "IP Address" to the correct IP format 
+    a. Ex: 10.72.155.51 (printers should be in range from .50-.69)
+    
+08. Click Submit Changes.
+
+09. Wait about 30 seconds and try to navigate to the new IP Address http://X.X.X.X  
+    and you should see the screen from step 2.
+
+10. If you see this the new IP has been configured correctly.
+
+11. If necessary, change the password in Rentalman to align with the new IP.
+</code></pre></div></div>
+
+		</article>
+		<footer>
+	<p>By <a href="https://linkedin.com/in/neuralman">Jia Huang</p>
+</footer>
+	</main>
+</body>
+
+</html>
