@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Jekyll + Github Pages Tutorial"
-date:   2019-02-12 18:21:15 +0000
-categories: jekyll update
+date:   2019-02-12 18:21:00 +0000
+categories: jekyll
 ---
 
 Check out this [Jekyll Tutorial][jekyll-tutorial].
