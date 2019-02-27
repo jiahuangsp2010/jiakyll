@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Rentalman - Barcode Printer Issue</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://0.0.0.0:8080/kbases/rentalman-barcode-printer-issue.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/links/">Links</a></li>
+				                 
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/kbase">KBase</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<img src="https://jiawp.neocities.org/img/ninja3.png" border="0">
+</header>
+	<main>
+		<article>
+			<h2>Rentalman - Barcode Printer Issue (11292)</h2>
+
+<ol>
+  <li>
+    <p>Verify the printer shows Ready and the IP is correct, and that the IP address can be pinged.  If not See KBase -Rentalman barcode printer IP address verification and reset (KBase 10902)</p>
+
+    <p>a. If the printer is not ready, see Troubleshoot the Barcode Printer Status Lights (KBase 10442)</p>
+  </li>
+  <li>
+    <p>On Command line type WRKOUTQ UR###* (Replace the ### with the printer name followed by an *)</p>
+  </li>
+  <li>
+    <p>Verify that the Barcode printer is listed</p>
+
+    <p>a. If a printer is not listed see Create a Barcode Printer in Rentalman (KBase 11122)</p>
+  </li>
+  <li>
+    <p>Check to see if there is a writer listed for the barcode printer</p>
+
+    <p>a. If blank Start the writer (KBase 10726) by placing a 2 next to the printer and press Enter</p>
+
+    <p>b. Continue pressing Enter until you are back to the printer listing (3 times)</p>
+
+    <p>c. Press F5 to refresh the screen and you should then see a writer listed</p>
+  </li>
+  <li>
+    <p>If there is a writer for the printer, and the status is valid, End the writer, and then restart the writer.</p>
+
+    <p>a. Next to the printer select 9 (Work with Writers) and press Enter</p>
+
+    <p>b. Next to the writer select 4 and without pressing anything press F4</p>
+
+    <p>c. On the End Writer screen change the “When to end writer” field to *IMMED and press Enter</p>
+
+    <p>d. The screen will return to the Work with Writers screen and at the bottom should indicate that it is ending.</p>
+
+    <p>e. Press F5 to refresh and it should display (No Writers)</p>
+
+    <p>f. Press F12 to go back to the Work with All Output Queue screen</p>
+
+    <p>g. If blank Start the writer (KBase 10726) by placing a 2 next to the printer and press Enter</p>
+
+    <p>h. Continue pressing Enter until you are back to the printer listing (3 times)</p>
+
+    <p>i. Press F5 to refresh the screen and you should then see a writer listed</p>
+  </li>
+</ol>
+
+<p>If the Barcode Printer continues not to print, gather the following information and escalate to RentalMan Level 2</p>
+
+<p>A. Location Number</p>
+
+<p>B. User’s RentalMan user ID</p>
+
+<p>C. RentalMan Printer name</p>
+
+<p>D. IP Address in RentalMan</p>
+
+<p>E. IP Address on device</p>
+
+<p>F. Ping Results</p>
+
+<p>G. Steps taken to trouble shoot the issue</p>
+
+		</article>
+		<footer>
+	<p>By <a href="https://linkedin.com/in/neuralman">Jia Huang</p>
+</footer>
+	</main>
+</body>
+
+</html>

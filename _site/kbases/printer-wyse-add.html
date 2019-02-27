@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Printer - WYSE Add</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://0.0.0.0:8080/kbases/printer-wyse-add.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/links/">Links</a></li>
+				                 
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/kbase">KBase</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<img src="https://jiawp.neocities.org/img/ninja3.png" border="0">
+</header>
+	<main>
+		<article>
+			<h2>Printer - WYSE Add (10170)</h2>
+
+<h1 id="10170">10170</h1>
+<hr />
+
+<h2 id="add-printer-to-print-server-for-wyse-windows-sessions">Add Printer to Print Server for WYSE Windows Sessions</h2>
+
+<p>Required information for this type of request:</p>
+
+<ul>
+  <li>Printer Make</li>
+  <li>Printer Model</li>
+  <li>IP address</li>
+  <li>Location Number (e.g. 586)</li>
+  <li>City and State where location is based</li>
+  <li>Printer Name (e.g. UR586P2)</li>
+  <li>Printer Asset Linked to the Ticket</li>
+</ul>
+
+<ol>
+  <li>
+    <p>Confirm the unit is not already created on \PS2, \PS1, \ PS3 (for Legacy NES Locations only), \CTXUPS1 or \CTXUPS2 (for Legacy NES Locations only)</p>
+  </li>
+  <li>
+    <p>If the printer isn’t created on either server, collect the required information and record in the Description field.</p>
+  </li>
+  <li>
+    <p>Verify that the printer is setup with the proper static IP range.
+ a. e.g.URxxxP1 = 10.x.x.51, URxxxP2 = 10.x.x.52 etc.</p>
+  </li>
+  <li>
+    <p>Verify that the device can be reached on the network.</p>
+  </li>
+  <li>
+    <p>Assign the ticket to PC Level 2 stating that the printer needs to be added to the print server.</p>
+  </li>
+  <li>
+    <p>The PC Level 2 team will create the printer and update the ticket and the user when the request has been completed.</p>
+  </li>
+  <li>
+    <p>If assistance in adding the printer to the users Windows session is needed, please refer to the device and environment specific kbase document.</p>
+  </li>
+</ol>
+
+<h2 id="legacy-nes-location-printer-procedures-only">Legacy NES Location Printer Procedures Only</h2>
+
+<p>With the acquisition of NES there has been some changes to the Print Servers specific to legacy NES sites only. Please refer to the notes below</p>
+
+<p><strong>Citrix Based Printing</strong></p>
+
+<ul>
+  <li>NES printers have been added to a new server called CTXUPS2. Only legacy NES location printers will be on this server. (Refer to the attached list of NES Locations)</li>
+  <li>Any user in a Citrix session should have the location printer’s auto created at log on from CTXUPS2. The user will need to select the default printer the first time.</li>
+  <li>If a NES location printer needs to be added to CTXUPS2, the printer will need to be added by PC L2 with the information required and outlined in this kbase. (see above)</li>
+</ul>
+
+<p><strong>WYSE Base Session Printing</strong></p>
+
+<ul>
+  <li>NES printers are going to be added to PS3 Server. Only legacy NES location printers will be on this server and PS3 should only be used for WYSE base session printing.</li>
+  <li>If a NES location printer needs to be added to PS3, the printer will need to be added by PC L2 with the information required in this kbase (see above)</li>
+</ul>
+
+<p><strong>Laptop Based Printing</strong></p>
+
+<ul>
+  <li>Users who need to print to a legacy NES printer from a laptop need to have the printer added will need to add a local printer to the unit and print by IP port. Please refer to kbase #10183 for the process. The proper driver will need to be used during the install process and will vary till their printers are refreshed with Lexmark units.</li>
+  <li>Laptop users should NOT use any PS or CTXUPS server to print. This applies to All UR and Legacy NES users</li>
+</ul>
+
+		</article>
+		<footer>
+	<p>By <a href="https://linkedin.com/in/neuralman">Jia Huang</p>
+</footer>
+	</main>
+</body>
+
+</html>

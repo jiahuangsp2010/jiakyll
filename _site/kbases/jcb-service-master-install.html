@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>JCB Service Master Install</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://0.0.0.0:8080/kbases/jcb-service-master-install.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/links/">Links</a></li>
+				                 
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/kbase">KBase</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<img src="https://jiawp.neocities.org/img/ninja3.png" border="0">
+</header>
+	<main>
+		<article>
+			<h2>JCB Service Master Install (12353)</h2>
+
+<h2 id="jcb-service-master-full-version">JCB Service Master Full Version</h2>
+
+<p>NOTE: This software requires approval from the Maintenance Team before it can be installed on users’ laptops.</p>
+
+<ul>
+  <li>The target laptop must be linked to the ticket and the computer name be listed in the Description</li>
+</ul>
+
+<p>NOTE1: In order to install the software, you will need to select it and Install it from “Available Software” in Software Center. The package is over 7GB and it could take up to 10 hours to download (depending on network connection). The installation is fully silent.</p>
+
+<ol>
+  <li>
+    <p>From the Support Center ticket, send an email to MaintenanceTechnical@ur.com and Cc the user requesting the software.</p>
+
+    <p>NOTE: If the request is coming directly from the Maintenance Team, proceed to step 3</p>
+
+    <p>a. Use the following email template adding the employee name, Job Title and Location n.:</p>
+
+    <p>**<Employee> who is a <Job Title=""> at &lt;LOC#&gt; is requesting approval to install the JCB Service Master Software - Full Version. Per the defined procedure, your team will verify that the user has received the proper training and has the proper JCB Service Master user account.**</Job></Employee></p>
+
+    <p><strong>Do you approve this install?</strong></p>
+  </li>
+  <li>
+    <p>Maintenance Team usually replies within the same day, but in case they don’t, send a follow up email</p>
+
+    <p>a. If the request is denied, have the user follow-up directly with the Maintenance Team</p>
+  </li>
+  <li>
+    <p>If approved:</p>
+
+    <p>a. Contact the user and remote to the laptop</p>
+
+    <p>b. Ensure there is enough space on C: Drive. If not, free some space by removing unneeded files (Disk Cleanup utility, Clear Temp files, move user’s files over to Home drive and if possible have the user check and delete files that are no longer needed)</p>
+
+    <p>c. Check power options and make sure the computer never goes to sleep on AC power, and connect the unit to AC power</p>
+
+    <p>d. Increase Configuration Manger cache size:</p>
+
+    <ul>
+      <li>Launch Configuration Manager client from Control Panel</li>
+      <li>Click on “Cache” tab and then on “Configure Settings”</li>
+      <li>Increase the cache size by setting the size to 15120 MB and click “Apply”</li>
+    </ul>
+  </li>
+  <li>
+    <p>Launch the SCCM Configuration Manager Console from ITSUPPORT Server</p>
+
+    <p>a. See kbase – Accessing SCCM Manager Console</p>
+  </li>
+  <li>
+    <p>Assets and Compliance should be selected by default, if not click the option at the bottom of the navigation pane.</p>
+  </li>
+  <li>
+    <p>Expand Device Collections</p>
+  </li>
+  <li>
+    <p>Select the PC Software Deployments Collection</p>
+  </li>
+  <li>
+    <p>Open “JCB Service Master Full” collection by double clicking on it</p>
+  </li>
+  <li>
+    <p>Verify the target computer is not already listed in the container</p>
+
+    <p>a. If the unit is already added, launch Configuration Manager on user’s laptop and run a “Machine Policy Retrieval &amp; Evaluation Cycle”. Launch Software Center and check “Available Software” Tab, Service Master should be showing in available Software. Check for duplication tickets for this request and see if another agent is also working this same ticket.</p>
+  </li>
+  <li>
+    <p>Right-click on the collection that is listed under Devices and select Add Resources</p>
+  </li>
+  <li>
+    <p>Enter the computer name in the field for the Name string and click Search.  (leaving the Resource type as System Resources and the search in collection field as <All Collections="">)</All></p>
+
+    <p>a. If the computer name is not showing in the search results, this means the computer name cannot be found in SCCM.  This can occur if the computer name is wrong or if the unit was just added to the domain and it hasn’t been imported from AD yet.</p>
+
+    <p>b. If the computer was just added to the domain, the AD import will occur on its own.  You will need to check back and attempt to add again.  You will need to update the All Systems collection after 60 minutes and attempt to add again.</p>
+  </li>
+  <li>
+    <p>Click on the listing for the client in the search results and click Add</p>
+  </li>
+  <li>
+    <p>Click Ok to close out the Add Resource to Collection window.</p>
+  </li>
+  <li>
+    <p>Right click on “JCB Service Master Full” container and select Update Membership to refresh the collection membership</p>
+  </li>
+  <li>
+    <p>Click the Refresh icon to the right of the address bar and the client you targeted should be listed in the collection (try again after a minute or so if it still isn’t displayed).</p>
+  </li>
+  <li>
+    <p>Create a new comment in Support Center for the ticket and note that the unit was targeted for install and any other applicable notes.</p>
+  </li>
+  <li>
+    <p>The user’s computer will automatically pick up the advertisement for this software when it checks in with the SCCM system as long as the SCCM client is installed, working properly and the client is pingable on the URI network.</p>
+
+    <p>a. If the SCCM Client isn’t installed please refer to the SCCM Client Install kbase.</p>
+
+    <p>b. To force the user’s computer to check in right away,  right click on the user’s computer in SCCM and select Client Accounts &gt; Machine Policy Evaluation and Update Cycle.</p>
+
+    <p>c. SCCM will popup a status window indicating the results of the forced policy update.</p>
+
+    <p><strong>This could also be executed from the user’s laptop by launching Configuration Manager Client in Control Panel (Actions tab)</strong></p>
+  </li>
+  <li>
+    <p>From the user’s laptop, launch Software Center and “JCB Service Master Full 2.0” should display under “Available Software”</p>
+  </li>
+</ol>
+
+		</article>
+		<footer>
+	<p>By <a href="https://linkedin.com/in/neuralman">Jia Huang</p>
+</footer>
+	</main>
+</body>
+
+</html>
