@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Enterprise Vault - Cannot Open Mail</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://0.0.0.0:8080/kbases/enterprise-vault-cannot-open-mail.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/links/">Links</a></li>
+				                 
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/kbase">KBase</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<img src="https://jiawp.neocities.org/img/ninja3.png" border="0">
+</header>
+	<main>
+		<article>
+			<h2>Enterprise Vault - Cannot Open Mail (10277)</h2>
+
+<h2 id="email-cannot-retrieve-mail-archived-by-enterprise-vault">Email Cannot Retrieve Mail Archived by Enterprise Vault</h2>
+
+<p>The Current Version of the Outlook Vault Software is: Veritas Enterprise Vault Outlook Add-in (x64)</p>
+
+<ol>
+  <li>
+    <p>Determine if the Current version of  the Outlook Enterprise Vault SW is installed on the user’s laptop.</p>
+  </li>
+  <li>
+    <p>Go to the Control Panel “Programs and Features” for Windows 7 and check for the existence of the “Symantec Enterprise Vault HTTP-Only Outlook Add-In” ver. 10.X: If this version exists remove it by uninstalling the software.</p>
+  </li>
+  <li>
+    <p>Go to the Start Menu &gt; All Programs &gt; Microsoft System Center &gt; Configuration Manager &gt; Software Center on the users laptop.</p>
+  </li>
+  <li>
+    <p>Attempt to install the Enterprise Vault Outlook Add-In (x64) 12.1.9723 (Veritas Technology)</p>
+  </li>
+  <li>
+    <p>If no client is listed in the software center, install the proper client package manually from \FS3\Software\ITSupport\Veritas Enterprise Vault\Version12\Outlook Add-In\x64</p>
+  </li>
+  <li>
+    <p>Close and re-launch Outlook.</p>
+  </li>
+  <li>
+    <p>Have the user open a message that has been archived.</p>
+  </li>
+</ol>
+
+		</article>
+		<footer>
+	<p>By <a href="https://linkedin.com/in/neuralman">Jia Huang</p>
+</footer>
+	</main>
+</body>
+
+</html>

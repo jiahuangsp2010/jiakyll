@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>JDG Diag - Software Class Not Registered Error</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://0.0.0.0:8080/kbases/jdg-diag-software-class-not-registered.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/links/">Links</a></li>
+				                 
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/kbase">KBase</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<img src="https://jiawp.neocities.org/img/ninja3.png" border="0">
+</header>
+	<main>
+		<article>
+			<h2>JDG Diag - Software Class Not Registered Error (12944)</h2>
+
+<h2 id="class-not-registered--jlg-diagnostic-software">Class not registered – JLG Diagnostic Software</h2>
+
+<p>Users may receive the following error message while trying to run diagnostics on JLG equipment using PGFLASHW Programming Software:</p>
+
+<p>The dll file may be missing or not registered:</p>
+
+<ol>
+  <li>
+    <p>If missing, copy “<strong>MSSTDFMT.DLL</strong>” from FS3 (path below) to user’s laptop <em>*c:\Windows\System32*</em> folder:</p>
+
+    <p><a href="\\fs3\Software\ITSupport\Equipment_Diagnostics\JLG\PGFLASH_DLL_Files">\fs3\Software\ITSupport\Equipment_Diagnostics\JLG\PGFLASH_DLL_Files</a></p>
+  </li>
+  <li>
+    <p>Open an elevated command prompt (you should already be on c:\WINDOWS\system32\ directory)</p>
+  </li>
+  <li>
+    <p>Type “<strong>regsvr32.exe MSSTDFMT.dll</strong>” and click “Ok” on “succeeded” message</p>
+  </li>
+  <li>
+    <p>User should now be able to launch <strong>PGFLASHW</strong> Software</p>
+  </li>
+</ol>
+
+
+		</article>
+		<footer>
+	<p>By <a href="https://linkedin.com/in/neuralman">Jia Huang</p>
+</footer>
+	</main>
+</body>
+
+</html>

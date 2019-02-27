@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Kubota - Diagmaster</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://0.0.0.0:8080/kbases/kubota-diagmaster.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/links/">Links</a></li>
+				                 
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/kbase">KBase</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<img src="https://jiawp.neocities.org/img/ninja3.png" border="0">
+</header>
+	<main>
+		<article>
+			<h2>Kubota - Diagmaster (12099)</h2>
+
+<h2 id="installing-kubota-diagmaster-bundle-431432400236-from-software-center">Installing Kubota Diagmaster Bundle 431/432/400/236 from Software Center</h2>
+
+<p>NOTE1 – Takeuchi Updated the Password and Registration code for Diagmaster. Instructions on how to update this info in Diagmaster are included in “DiagMaster Registration 2019.doc” Word Document attached to this article.</p>
+
+<p>NOTE2 – Installing software from the Software Center only applies to URI laptops properly connected to the UR network.</p>
+
+<ul>
+  <li>
+    <p>For a successful installation minimize or close all running programs/applications, and do not interrupt the process. Once the SW has been requested, Software Center will also need to be minimized (SW Installation prompts could be hiding behind it)
+  a. In case the process is interrupted and the installation failed re-run the install from Software Center under “Available Software” tab or “Installation Status tab” (it may take a few minutes for the Kubota Diagmaster Bundle to refresh and repopulate under Available Software)</p>
+  </li>
+  <li>
+    <p>Kubota Diagmaster can be installed on all Service Techs’ Laptops</p>
+  </li>
+  <li>
+    <p>No License needed</p>
+  </li>
+  <li>
+    <p>The following cable/adapter Kit will need to be purchased from Rentalman in order to use the Diagnostic Software.
+  <strong>Software installation will fail or throw an error if the Interface is not connected to the computer.</strong></p>
+
+    <p>Don’t order on ePRo. Write a RentalMan PO and fax it in to Takeuchi.</p>
+  </li>
+</ul>
+
+<p>The following is the 2019 Diagmaster User ID, Default Password, and Registration Code. All registration information is case sensitive and must be entered exactly as it reads below.</p>
+
+<ul>
+  <li>Login User ID: TakeuchiUSA001</li>
+  <li>Password: Zmupuaq0</li>
+  <li>Registration Code: QFUP7ZMSf9CvxfltWRearFal70hxHHkw</li>
+</ul>
+
+<p>NOTE3 – Any version of Takeuchi Diagmaster Kubota Bundle already installed will need to be removed from Control Panel in order for this Application to be installed successfully:</p>
+
+<p><strong>Uninstall the following Software via Programs and Features:</strong></p>
+
+<ol>
+  <li>
+    <p>Launch Software Center (Check Kbase #12030 - Installing Software from Software Center)</p>
+  </li>
+  <li>
+    <p>When the program opens it will default to the Available Software tab</p>
+  </li>
+  <li>
+    <p>Here there will be a list of any software that is not currently installed that is available from SCCM</p>
+
+    <p>a. NOTE – If a piece of software was installed but wasn’t installed by SCCM it will still show as an available option in Software Center</p>
+  </li>
+  <li>
+    <p>Click the check box next to “Takeuchi Diagmaster Kubota Bundle 431/432/400/236”</p>
+  </li>
+  <li>
+    <p>Click the Install Selected button to start the installs</p>
+  </li>
+  <li>
+    <p>Four Software packages will be installed with this bundle. This is a verbose installation and users will need to click on prompts in order to proceed. Minimize all other applications/windows first.</p>
+  </li>
+  <li>
+    <p>Installation Status tab will show download percentage and “Installing” message once the downlod is complete</p>
+  </li>
+  <li>
+    <p>The following window will display, and users will need to click on “Next”</p>
+  </li>
+  <li>
+    <p>Users will need to do the same for all other windows displayed. Leave all settings by default and click on next each time.</p>
+  </li>
+  <li>
+    <p>The following window will display. Users will have to connect the DST-I interface to the computer and click on “Next”. Software will then install.</p>
+  </li>
+  <li>
+    <p>Click “Next” on this next window. (The warning will display only if the Interface firmware/software is already up to date)</p>
+  </li>
+  <li>
+    <p>The following window will display. Click on “Next”</p>
+  </li>
+  <li>
+    <p>Click  “Finish” on the following window</p>
+  </li>
+</ol>
+
+<ul>
+  <li><strong>If the user gets the following error on Step 10:</strong></li>
+</ul>
+
+<p>i. Close the DST-i program and have the user disconnect the DST-i Interface</p>
+
+<p>ii. Reconnect the DST-i adapter interface and make sure it’s being detected properly in Device Manager. Should look like this:</p>
+
+<p>iii. Have the user try the DST-i Software Update Wizard again:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No need to re-run the entire package from Software Center. Navigate to “C:\Windows\ccmcache\” 
+folder and search for “DSTi_Interface”. Launch the Software by double clicking on it and 
+follow the prompts (Step 8)
+</code></pre></div></div>
+
+<p>iv. If Device Drivers are properly installed, but the Software is still crashing, make sure they are using the correct DST-i interface (could be using a Doosan Interface instead and they might need a completely different Software)</p>
+
+<p>v. check the model of laptop this Software is being installed on:</p>
+
+<ul>
+  <li>There seems to be a compatibility issue with older Dell Latitude E64xx series laptops and Kubota Software. If they’re using these old models (E6430/E6420) they may need to send the old laptop back to AMD and get them replaced with a newer model (E7440 or newer)</li>
+</ul>
+
+<p><strong>Checking Installation Status and Reinstalling Software</strong></p>
+
+<ol>
+  <li>
+    <p>Once Software Center is open click the Installed Software tab</p>
+  </li>
+  <li>
+    <p>All software that has been installed either from the Software Center or from SCCM when it is set to list in the Software Center will be listed here</p>
+  </li>
+  <li>
+    <p>For “Kubota Diagmaster Bundle”, Installed Software tab will show the following:</p>
+  </li>
+  <li>
+    <p>Although this is an “Available” Application, it cannot be uninstalled directly from Software Center.</p>
+  </li>
+  <li>
+    <p>To Reinstall it:</p>
+
+    <p>a. Manually uninstall the following Software from Programs and Features</p>
+
+    <p>b. Launch Configuration Manager and run an “Application Deployment Evaluation Cycle”</p>
+
+    <p>c. Launch Software Center (If already open, close and re-launch it) and you’ll be able to find the software under “Available Software”</p>
+
+    <p>d. “Kubota Diagmaster Bundle” can now be re-installed from Software Center</p>
+  </li>
+</ol>
+
+<p>For more details on installation status of a given program from SCCM or Software Center see kbase SCCM_Check Advertisement Status for a Specific Computer</p>
+
+		</article>
+		<footer>
+	<p>By <a href="https://linkedin.com/in/neuralman">Jia Huang</p>
+</footer>
+	</main>
+</body>
+
+</html>

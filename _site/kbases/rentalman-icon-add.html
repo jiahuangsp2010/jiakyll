@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Rentalman - Icon Add</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://0.0.0.0:8080/kbases/rentalman-icon-add.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/links/">Links</a></li>
+				                 
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/kbase">KBase</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<img src="https://jiawp.neocities.org/img/ninja3.png" border="0">
+</header>
+	<main>
+		<article>
+			<h2>Rentalman - Icon Add (11499)</h2>
+
+<h2 id="ibm-iacs--create-rentalman-icon">IBM iACS – Create Rentalman Icon</h2>
+
+<p><strong>Note</strong> – IBM i Access Client Solutions uses a new file extension, HOD, for the 5250 emulation.  WS files will still open an IBM Client Solutions for Windows emulated sessions.</p>
+
+<p><strong>Option 1 – Copy pre-built icon</strong></p>
+
+<p>During the install of IBM I Access Client Solutions a default icon with all the default settings already saved was placed in the program’s install directory – C:\Program Files (x86)\IBM\i Access Client Solutions\Rentalman.HOD</p>
+
+<ol>
+  <li>
+    <p>Open Windows Explorer and navigate to the install directory – C:\Program Files (x86)\IBM\i Access Client Solutions\</p>
+  </li>
+  <li>
+    <p>This file - Rentalman.HOD can be copied to a convenient location for the end user such as the desktop or the home drive</p>
+
+    <p>a. Right click on the file and select Copy</p>
+
+    <p>b. Navigate to the destination the end user would like the icon to be, right click and select Paste.</p>
+  </li>
+  <li>
+    <p>Note – Creating a shortcut to this icon will cause an error message whenever the end user closes the application since settings cannot be saved to the file.</p>
+  </li>
+</ol>
+
+<p><strong>Option 2 – Create new icon</strong></p>
+
+<ol>
+  <li>
+    <p>Click on Start and click All Programs</p>
+  </li>
+  <li>
+    <p>Scroll down and expand the IBM i Access Client Solutions folder</p>
+  </li>
+  <li>
+    <p>Open the ACS Session Manager</p>
+  </li>
+  <li>
+    <p>Click New Display Session</p>
+  </li>
+  <li>
+    <p>Session Manager will open a new window that will prompt you for the information needed for the sessions:</p>
+
+    <p>a. Click the Connection option</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> i. Session Name – Rentalman
+
+ ii. Destination Address – RM.UR.COM
+
+ iii. Destination Port – 992
+
+ iv. Protocol – Telnet – TLS/SSL
+
+ v. Screen Size – 27x132
+</code></pre></div>    </div>
+
+    <p>b. Click the Advanced option under Connection</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> i. Password Prompting – Use Kerberos authentication; do not prompt
+
+ ii. Bypass signon - Yes
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Click OK and a new 5250 emulation window will open up and automatically sign in</p>
+  </li>
+  <li>
+    <p>After they have logged in and the application is showing the login screen for Rentalman click File and click Save As</p>
+  </li>
+  <li>
+    <p>Save the new session to a convenient location such as the end users Home drive or Desktop</p>
+  </li>
+</ol>
+
+
+		</article>
+		<footer>
+	<p>By <a href="https://linkedin.com/in/neuralman">Jia Huang</p>
+</footer>
+	</main>
+</body>
+
+</html>

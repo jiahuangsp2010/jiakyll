@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>VPN - Cert Reinstall</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://0.0.0.0:8080/kbases/vpn-cert-reinstall.html">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+
+</head> 
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/links/">Links</a></li>
+				                 
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/kbase">KBase</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<img src="https://jiawp.neocities.org/img/ninja3.png" border="0">
+</header>
+	<main>
+		<article>
+			<h2>VPN - Cert Reinstall (12420)</h2>
+
+<h2 id="reinstall-vpn-certificate">Reinstall VPN Certificate</h2>
+
+<p>If needed the personal VPNuser certificate can be removed and reinstalled for an end user on a company provided laptop that is getting a certificate related error message such as “Certificate Validation Failure”</p>
+
+<ol>
+  <li>
+    <p>Click on Start then Control Panel</p>
+  </li>
+  <li>
+    <p>If in Categories view click Network and Internet</p>
+  </li>
+  <li>
+    <p>Click Internet Options</p>
+  </li>
+  <li>
+    <p>Click the Content tab then the Certificates button</p>
+  </li>
+</ol>
+
+<p>The certificate is listed in three of the Certificate tabs.  Personal, Intermediate Certificate Authorities, and Trusted Publishers.</p>
+
+<p>We can remove and reinstall the certificate under the Personal tab but the other two are locked in place and cannot be removed.</p>
+
+<ol>
+  <li>
+    <p>Click on the Personal tab</p>
+  </li>
+  <li>
+    <p>If a ”vpnuser” certificate is already listed click that listing then click Remove</p>
+  </li>
+  <li>
+    <p>Close the Certificates window</p>
+  </li>
+  <li>
+    <p>Reinstall the <strong>VPN Security Certificate 1.2 – VPNuser Personal Certificate Deploy</strong> from Software Center.  See kbase Installing Software from Software Center for more details.</p>
+  </li>
+</ol>
+
+<p>For more details on the full suite of software and files needed for VPN connections on company provided laptops see kbase VPN – 2 Factor Authentication</p>
+
+		</article>
+		<footer>
+	<p>By <a href="https://linkedin.com/in/neuralman">Jia Huang</p>
+</footer>
+	</main>
+</body>
+
+</html>
